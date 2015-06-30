@@ -1,9 +1,9 @@
 {
   "name": "fly-coffee",
   "version": "0.0.1",
-  "description": "...",
+  "description": "Fly plugin for CoffeeScript",
   "license": "MIT",
-  "repository": "https://github.com/flyjs/fly-coffee",
+  "repository": "https://github.com/bucaran/fly-coffee",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
