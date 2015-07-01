@@ -44,7 +44,7 @@ exports.build = function* () {
 
 [author]: http://about.bucaran.me
 
-[fly]: https://www.github.com/bucaran/fly
+[fly]: https://www.github.com/flyjs/fly
 
 [fly-badge]: https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
 [mit-badge]: https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
