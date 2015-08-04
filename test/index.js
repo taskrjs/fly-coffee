@@ -6,7 +6,7 @@ test("fly-coffee", (t) => {
   coffee.call({
     filter: function (name, transform, options) {
       t.equal(name, "coffee", "add coffee filter")
-      t.ok(/this.a/.test(transform("@a")), "coffee transform")
+      t.ok(/this\.a/.test(transform("@a")), "coffee transform")
       t.equal(options.ext, ".js", "extension is .js")
     }
   })
