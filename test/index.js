@@ -4,10 +4,12 @@ const coffee = require("../")
 test("fly-coffee", (t) => {
   t.plan(3)
   coffee.call({
-    filter: function (name, transform, options) {
+    filter: function (name, transform) {
+      const result = transform("@a")
       t.equal(name, "coffee", "add coffee filter")
-      t.ok(/this\.a/.test(transform("@a")), "coffee transform")
-      t.equal(options.ext, ".js", "extension is .js")
+      t.ok(/this\.a/.test(result.code), "coffee transform")
+      console.log(result)
+      t.equal(result.ext, ".js", "extension is .js")
     }
   })
 })
