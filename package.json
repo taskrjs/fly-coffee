@@ -6,13 +6,15 @@
   "repository": "https://github.com/bucaran/fly-coffee",
   "main": "index.js",
   "scripts": {
-    "spec": "tape test/*.js | tap-spec"
+    "test": "tape test/*.js | tap-spec"
   },
   "author": "Jorge Bucaran",
   "dependencies": {
     "coffee-script": "^1.9.3"
   },
   "devDependencies": {
+    "fly": "^2.0.4",
+    "fly-clear": "^1.0.1",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   },
