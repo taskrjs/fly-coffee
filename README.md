@@ -4,48 +4,32 @@
   </a>
 </div>
 
-> [CoffeeScript](http://coffeescript.org/) plugin for _[Fly][fly]_.
+# fly-coffee [![][travis-badge]][travis-link]
 
-[![][fly-badge]][fly]
-[![npm package][npm-ver-link]][releases]
-[![][dl-badge]][npm-pkg-link]
-[![][travis-badge]][travis-link]
-[![][mit-badge]][mit]
+> [CoffeeScript](http://coffeescript.org/) plugin for Fly.
 
-## Usage
-> Check out the [documentation](http://coffeescript.org/documentation/docs/command.html#section-5) to see the available options.
 
-### Install
+## Install
 
 ```a
-npm install -D fly-coffee
+npm install --save-dev fly-coffee
 ```
 
-### Example
+## Usage
+
+Check out the [documentation](http://coffeescript.org/#usage) to see the available options.
 
 ```js
-export build = function* () {
-  yield this
-    .source("src/**/*.coffee")
-    .coffee()
-    .target("dist/")
+exports.coffee = function * (fly) {
+  yield fly.source("src/**/*.coffee").coffee({
+    sourceMap: true
+  }).target("dist/js")
 }
 ```
 
-# License
+## License
 
-[MIT][mit] © [Jorge Bucaran][author] et [al][contributors]
+MIT © [FlyJS](https://www.github.com/flyjs/fly)
 
-
-[mit]:          http://opensource.org/licenses/MIT
-[author]:       http://about.bucaran.me
-[contributors]: https://github.com/bucaran/fly-coffee/graphs/contributors
-[releases]:     https://github.com/bucaran/fly-coffee/releases
-[fly]:          https://www.github.com/flyjs/fly
-[fly-badge]:    https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
-[mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
-[npm-pkg-link]: https://www.npmjs.org/package/fly-coffee
-[npm-ver-link]: https://img.shields.io/npm/v/fly-coffee.svg?style=flat-square
-[dl-badge]:     http://img.shields.io/npm/dm/fly-coffee.svg?style=flat-square
-[travis-link]:  https://travis-ci.org/bucaran/fly-coffee
-[travis-badge]: http://img.shields.io/travis/bucaran/fly-coffee.svg?style=flat-square
+[travis-link]:  https://travis-ci.org/flyjs/fly-coffee
+[travis-badge]: http://img.shields.io/travis/flyjs/fly-coffee.svg?style=flat-square

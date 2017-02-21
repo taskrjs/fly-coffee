@@ -9,6 +9,13 @@
     "test": "tape test/*.js | tap-spec"
   },
   "author": "Jorge Bucaran",
+  "contributors": [
+    {
+      "name": "Luke Edwards",
+      "email": "luke@lukeed.com",
+      "url": "https://lukeed.com"
+    }
+  ],
   "dependencies": {
     "coffee-script": "^1.9.3"
   },
